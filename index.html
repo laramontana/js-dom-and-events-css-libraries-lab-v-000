@@ -4,15 +4,16 @@
     <title>HTML/CSS Lab</title>
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
     <style>
-      div#wrapper {
-        border: 1px solid black;
+      .post {
+        border-bottom: 2px solid #999;
       }
-      div#img {
-        border: 1px solid red;
+      #last {
+        border-bottom: 0px;
+      }
+      .img {
         width: 12%;
       }
-      div#header {
-        border: 1px solid green;
+      .header {
         width: 88%;
       }
       .muted {
@@ -22,17 +23,48 @@
   </head>
   <body>
 
-    <div id="wrapper" style="width: 600px" class="flex mt4 block mx-auto">
-      <div id="img" class="px2 pt2">
-        <img class="mb2 rounded" width="65" height="65" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"/>
+    <div class="wrapper mt4">
+      <div style="width: 600px" class="post flex pb1 block mx-auto">
+        <div class="img pr2 pt2">
+          <img class="mb2 rounded" width="65" height="65" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"/>
+        </div>
+        <div class="header pt2">
+          <p class="inline m0"><strong>Lara Matyushenko</strong></p>
+          <p class="inline muted mb1">@lara_montana - Nov 12</p>
+          <div class="comment">
+            <p class="mt2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
       </div>
 
-      <div id="header" class="pt2">
-        <p class="inline m0"><strong>Lara Matyushenko</strong></p>
-        <p class="inline muted m0">@lara_montana - Nov 12</p>
+      <div style="width: 600px" class="post flex pb1 block mx-auto">
+        <div class="img pr2 pt2">
+          <img class="mb2 rounded" width="65" height="65" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"/>
+        </div>
+        <div class="header pt2">
+          <p class="inline m0"><strong>Liza Boksha</strong></p>
+          <p class="inline muted mb1">@lizzy - Nov 10</p>
+          <div class="comment">
+            <p class="mt2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="last" style="width: 600px" class="post flex pb1 block mx-auto">
+        <div class="img pr2 pt2">
+          <img class="mb2 rounded" width="65" height="65" src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg"/>
+        </div>
+        <div class="header pt2">
+          <p class="inline m0"><strong>Ryan Smith</strong></p>
+          <p class="inline muted mb1">@ryan89 - Nov 09</p>
+          <div class="comment">
+            <p class="mt2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
       </div>
 
     </div>
+
 
   </body>
 </html>
